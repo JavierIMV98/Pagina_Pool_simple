@@ -1,0 +1,191 @@
+section{
+    color: white;
+}
+h3{
+    font-size: 24px;
+    text-align: center;
+    color: #2b2b44;
+}
+footer{
+    height: 60vh;
+    color: white;
+}
+.facebook{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#seccion1{
+    height: 87vh;
+    background-image:     linear-gradient(rgba(29, 35, 40, 0.52), rgba(0, 0, 0, 0.73)),
+    url('image/pool0.jpg');
+}
+body{
+    background-color: #0e131e;
+}
+#titulo{
+    padding-top: 150px;
+    font-size: 17vh;
+    text-align: center;
+}
+#p1{
+    font-size: 30px;
+    text-align: center;
+}
+.subtitulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.imagengrid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 3px #141421;
+    border-radius: 5px;
+}
+.contenido{
+    margin: 15px;
+}
+p{
+    font-size: 18px;
+}
+
+#servicio{
+    text-align: center;
+    color: #141421;
+    grid-area: t;
+}
+.servicon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ps3{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+@media(min-width: 600px) {
+    #seccion2{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        'a b' 
+        'c d';
+    }
+    .grid-item{
+        padding: 50px;
+    }
+    .grid-item1{
+        grid-area: a;
+    }
+    .grid-item2{
+        grid-area: b;
+        padding-left: 30px;
+    }
+    .grid-item3{
+        grid-area: c;
+    }
+    .grid-item4{
+        grid-area: d;
+    }
+    .grid-item5{
+        grid-area: e;
+    }
+    #seccion3{
+        padding: 50px;
+        margin: 15px;
+        background-image: linear-gradient(rgba(255, 255, 255, 1), rgb(255, 255, 255, 0.5)),
+        url('image/pool5.jpg');
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        't t t t'
+        'q w e r' ;
+        justify-content: center;
+    }
+    .griditem{
+        display: grid;
+        margin-top: 30px;
+        padding: 10px;
+        
+    }
+    .griditem1{
+        grid-area: q;
+    }
+    .griditem2{
+        grid-area: w;
+    }
+    .griditem3{
+        grid-area: e;
+    }
+    .griditem4{
+        grid-area: r;
+    }
+    iframe{
+        width: 50vw;
+        height: 30vh;
+    }
+
+}
+@media(max-width: 600px) {
+    #titulo{
+        font-size: 80px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    #p1{
+        font-size: 25px;
+    }
+    #seccion1{
+        height: 80vh;
+    }
+    #seccion2{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        'a'
+        'b' 
+        'c'
+        'd';
+    }
+    .grid-item{
+        padding: 20px;
+    }
+    .grid-item1{
+        grid-area: a;
+    }
+    .grid-item2{
+        grid-area: b;
+        padding-left: 30px;
+    }
+    .grid-item3{
+        grid-area: c;
+    }
+    .grid-item4{
+        grid-area: d;
+    }
+    #seccion3{
+        padding: 50px;
+        margin: 15px;
+        background-image: linear-gradient(rgba(255, 255, 255, 1), rgb(255, 255, 255, 0.6)),
+        url('image/pool6v.jpg');
+        
+    }
+    .griditem{
+        display: grid;
+        margin-top: 30px;
+        padding: 10px;
+        
+    }
+    iframe{
+        width: 93vw;
+        height: 40vh;
+    }
+}
